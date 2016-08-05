@@ -7,11 +7,9 @@ public class Drink {
     // price, ingredients, menu position, can be made
     private int price;
     private Map<Ingredient, Integer> recipe;
-    private int menuPosition;
 
-    public Drink(Map<Ingredient, Integer> recipe, int menuPosition) {
+    public Drink(Map<Ingredient, Integer> recipe) {
         this.recipe = new HashMap<>(recipe);
-        this.menuPosition = menuPosition;
         this.price = setPrice();
     }
 

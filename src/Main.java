@@ -1,5 +1,3 @@
-package com.lombardo;
-
 import com.lombardo.model.Drink;
 import com.lombardo.model.Ingredient;
 
@@ -13,10 +11,10 @@ public class Main {
         Ingredient coffee = new Ingredient(10, "coffee");
 
         Map<Ingredient, Integer> coffeeWithSugarRecipe = new HashMap<>();
-        coffeeWithSugarRecipe.put(sugar, 2);
+        coffeeWithSugarRecipe.put(sugar, 20);
         coffeeWithSugarRecipe.put(coffee, 1);
 
-        Drink coffeeWithSugar = new Drink(coffeeWithSugarRecipe, 1);
+        Drink coffeeWithSugar = new Drink(coffeeWithSugarRecipe);
 
         int answer = coffeeWithSugar.getPrice();
         System.out.println(answer);
